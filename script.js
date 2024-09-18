@@ -2,24 +2,28 @@ const form = document.querySelector('form');
 const resultDiv = document.querySelector('#result');
 const audio = document.querySelector('#gay-song');
 
+const gayNames = ['gabriel', 'sena', 'kauan', 'firmino', 'rodrigo']; // add more names to this array
+const felipeResponse = 'Homão da porra';
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const name = document.querySelector('#name').value.trim().toLowerCase(); // convert to lowercase
+  const name = document.querySelector('#name').value.trim().toLowerCase();
+
   let response;
 
-  if (name.includes('sena')) {
+  if (gayNames.includes(name)) {
     response = 'Você é extremamente gay';
   } else if (name.includes('felipe')) {
-    response = 'Homão da porra';
+    response = felipeResponse;
   } else {
     response = 'Nada a declarar';
   }
 
   resultDiv.innerText = response;
-  resultDiv.classList.add('result'); // add result class for styling
+  resultDiv.classList.add('result');
 
   if (response === 'Você é extremamente gay') {
-    document.body.classList.add('gay-mode'); // add gay mode class for background color
-    audio.play(); // play the gay anthem
+    document.body.classList.add('gay-mode');
+    audio.play();
   }
 });
