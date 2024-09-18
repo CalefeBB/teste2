@@ -7,7 +7,7 @@ form.addEventListener('submit', (e) => {
   const name = document.querySelector('#name').value.trim().toLowerCase(); // convert to lowercase
   let response;
 
-  if (name.includes('Sena')) {
+  if (name.includes('sena')) {
     response = 'Você é extremamente gay';
   } else if (name.includes('felipe')) {
     response = 'Homão da porra';
