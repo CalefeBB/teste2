@@ -2,7 +2,7 @@ const form = document.querySelector('form');
 const resultDiv = document.querySelector('#result');
 const audio = document.querySelector('#gay-song');
 
-const gayNames = ['gabriel', 'sena', 'kauan', 'firmino', 'rodrigo']; // add more names to this array
+const gayNames = ['gabriel', 'sena', 'kauan', 'firmino', 'rodrigo', 'siqueira', 'caua' ]; // add more names to this array
 const felipeResponse = 'Homão da porra';
 
 form.addEventListener('submit', (e) => {
